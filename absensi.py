@@ -12,11 +12,15 @@ def second_counter(waktu):
     detik = (((int(h) * 60) + int(m)) * 60) + int(s)
     return detik
 
+def sheet_editor():
+    pass
+
 
 
 # MAIN PROGRAM
 # Open the zoom chat file
-file_chat = input("Masukkan nama file tempat log chat ZOOM disimpan (Jangan lupa extensi .txt nya): ")
+file_chat = input("Masukkan nama file chat ZOOM (Pastikan file berada di folder file-chat dan jangan lupa extensi .txt nya): ")
+file_chat = "file-chat/" + file_chat
 daftar_teks = open(file_chat,"r",encoding='utf-8')
 daftar_hasil =[]
 
