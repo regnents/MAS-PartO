@@ -1,1 +1,5 @@
 client_key.json
+hasil-absensi/*
+file-chat/*
+!hasil-absensi/.gitkeep
+!file-chat/.gitkeep
