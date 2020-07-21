@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bot-sparta",
+  "private_key_id": "5d5ac524f882e6db6c06b727a23e1dd936d34488",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq4qMBYnSs1ASJ\nWoUg0P2/3KPfe4o3db147nvThtNwosqkhc8Bon0TPnqRes16ReJvwaW/C2LSNNLF\n/BWRX2Kl5RKLTWo8lYNt19HxQWV3dnTt2rAM3ktxlxEjdzss8UBCoIeDdcJHzwsO\n7B6YmhYrF3l56t/Ozc3rZortiKSzS+XfTM38L9VlyLLP4edARRJTU57CvgoVSXxG\ne2A/HBomHV42lhEn99Qi7sx08EFnU1z7GelAG0V2ffFq/wDB6KEICodt212l/bdO\n4043JCDnYdJqJovkUHpcuuMHIqifRZ6CsigE9JvyDFKbwUB2LFZGhM+1sRy32vFb\nsKxCD40PAgMBAAECggEAFbHMevuvuf9NYiNdUmNl9kqB0s4BfUqpLCYED2sxrb46\nbB+sE6uNeyN2oRXjlJnfBkwh3uVdqDfaPcC5UOmOAbyuxC5RsJuqAgh2bU1dnzMp\nOMcyNuKugPRqUcPXKJH/lACC+RllTwOF27ZLU26rJiZb9DKcM5+PfHVaFDpBmpzG\nJoBQXRG1jKiKtXaYRFUpMvm82kZCliJhqPu9XLimG9NLeWEPngrN9n4Bj2IMDQiE\nJM2/vOa9YL+Jr3/G6+N59ldyn0ernXch4UtAo/F96lwuqF8Clt/FwBh3c7Kz5GYe\n9uTpwAroQZ2JIp0tQL6QhcU9cmOQHCupt+Z/eIjdGQKBgQDYLf2b1akqxg3ji9A4\nA0PGvo2nsRzylEsDz2cmMejBJf4uZQ1YPbiFeXfbnDwF32H/WEsN5kASi8gyFcKT\n3yDT6rcuz3n+3WnR2EJN7pmvYC44FGnT6FP95XO54SUUH+6e4sznmTghMhjPn4pv\n5/9SZWGZhSr6vxshBZJUpUBE5wKBgQDKXMdgjEvOwBhynxaz9qjz0ynqyBQb8rSf\nOO3zQmI/18Ghd585e8+WFlm+snNBotkRiQw5O08PTXLzZb6ayuwsoD0Q0CesDLEb\nC0iMabnOS4CYfLXyGCtg/Q2giSsdZjTj/nDj+6gfOlWr1MEICJrKE07VuylyiYho\neEkZZGvJmQKBgAp/2VRrQScZrW0Cyl8eEXmioaCmYoCJoUcTGLBrNiHDZZ/9OnOx\ns7eP2blp0iR63/iV4jdPmocMEPIVyniCGscQHEuCuisdt9kARuAgGYjCBBynKSio\nnQO01DUP8UwT7PP8kfUhpO8/zqKu3ftnaignUmExbY/2HiwxaBUCXae7AoGBALAm\ngwdwGK0oWh+sjD6rf/Z+4gYVlCuf4cqX68nNB2k7jrnXPyrys4iafBSbkeiYsQuq\nmJFZJ0DS0jU9Y+WqrltKQN3Z1C7X/XLlJ4nSnoMNBiu2o0rR7zDGFo6f2IAG8BNm\n8S4Dah2E0f55fG5ZzyQIGp/CBBpHzg3iZv9LguhBAoGAEcKCpWEugMUkw1NfFHfe\nSeHpY5ukVnuyJxUCd+eRz9xcC5X+5nymdyHlCyTDIXslKE3ArteDrB06lvfaG6+t\nQNILwWW/awVk6W5scZJVv8dkxhNXoOBBIHj4A2sJIvTqlAu4xXLzDfnk3SYvvWAM\nxMGl/EyvAJmioG/uSNYbC94=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mrano-560@bot-sparta.iam.gserviceaccount.com",
+  "client_id": "116678301519963424905",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mrano-560%40bot-sparta.iam.gserviceaccount.com"
+}

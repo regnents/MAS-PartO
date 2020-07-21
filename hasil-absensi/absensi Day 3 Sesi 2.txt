@@ -1,0 +1,52 @@
+GAGAL ABSEN 12:23:59	 05 16519243 Aurelius Marcel Candra  : 05 16519243 Aurelius Marcel Candra 
+GAGAL ABSEN 12:24:02	 05 16519247 Naufal Alexander Suryasumirat  : 05 16519247 Naufal Alexander Suryasumirat 
+GAGAL ABSEN 12:24:08	 05 16519192 Justin Dermawan Ikhsan  : 05 16519192 Justin Dermawan Ikhsan 
+SALAH FORMAT 12:24:52	 06 16519251 Isabella Handayani Sumantri  : Siang kak 
+GAGAL ABSEN 12:24:52	 06 16519263 Ahmad Saladin  : 06 16519263 Ahmad Saladin 
+GAGAL ABSEN 12:24:59	 05 16519040 Anastasia Beatrice Caroline  : 05 16519040 Anastasia Beatrice Caroline 
+GAGAL ABSEN 12:25:02	 06 16519251 Isabella Handayani Sumantri  : 06 16519251 Isabella Handayani Sumantri 
+GAGAL ABSEN 12:25:06	 06 16519289 Wildan Daffa Hafizh  : 06 16519289 Wildan Daffa Hafizh 
+GAGAL ABSEN 12:25:15	 06 16519220 Fathiyya Maghfirah Teddy  : 06 16519220 Fathiyya Maghfirah Teddy 
+GAGAL ABSEN 12:25:18	 06 16519371 Hafid Abi Daniswara  : 06 16519371 Hafid abi daniswara 
+GAGAL ABSEN 12:25:27	 06 16519204 Fakhri Nail Wibowo  : 06 16519204 Fakhri Nail Wibowo 
+GAGAL ABSEN 12:25:33	 05 16519163 Arjuna Marcelino  : 05 16519163 Arjuna Marcelino 
+SALAH FORMAT 12:25:35	 06 16519214 Ronggur  : 16 16519214 Ronggur Mahendra  
+GAGAL ABSEN 12:25:36	 05 16519201 Fabian Savero Diaz Prano: 05 16519201 Fabian Savero Diaz Pranoto 
+GAGAL ABSEN 12:25:47	 06 16519287 Moses Ananta  : 06 16519287 Moses Ananta 
+GAGAL ABSEN 12:25:49	 05 16519188 Nabil Nabighah  : 05 16519188 Nabil Nabighah 
+GAGAL ABSEN 12:25:50	 06 16519215 Chintya Wijaya  : 06 16519215 Chintya Wijaya 
+GAGAL ABSEN 12:25:52	 05 16519234 Muchammad Fathurrahman Azhar  : 05 16519234 Muchammad Fathurrahman Azhar 
+GAGAL ABSEN 12:25:54	 05 16519241 Leonardus James Wang  : 05 16519241 Leonardus James Wang 
+GAGAL ABSEN 12:25:55	 05 16519195 Alexander Ludwig Agu  : 05 16519195 Alexander Ludwig Agu 
+GAGAL ABSEN 12:25:56	 06 16519214 Ronggur  : ralat ka  06 16519214 Ronggur MAhendra Widya Putra 
+GAGAL ABSEN 12:25:58	 05 16519182 Muhammad Rizal Muhaimin  : 05 16519182 Muhammad Rizal Muhaimin 
+GAGAL ABSEN 12:26:00	 06 16519232 Handy Zulkarnain  : 06 16519232 Handy Zulkarnain 
+GAGAL ABSEN 12:26:02	 05 16519217 Mohammad Sheva Almeyda Sofjan  : 05 16519217 Mohammad Sheva Almeyda Sofjan 
+GAGAL ABSEN 12:26:07	 06 16519203 Warren Gabriel Mulyawan  : 06 16519203 Warren Gabriel Mulyawan 
+GAGAL ABSEN 12:26:09	 06 16519213 Muhammad Dehan Al Kautsar  : 06 16519213 Muhammad Dehan Al Kautsar 
+GAGAL ABSEN 12:26:12	 06 16519288 Muhammad Farhan  : 06 16519288 Muhammad Farhan 
+GAGAL ABSEN 12:26:12	 06 16519152 Aulia Adila  : 06 16519152 Aulia Adila 
+GAGAL ABSEN 12:26:14	 06 16519225 Raihan Astrada Fathurrahman  : 06 16519225 Raihan Astrada Fathurrahman 
+GAGAL ABSEN 12:26:15	 06 16519034 Indira Damayanti  : 06 16519034 Indira damayanti 
+GAGAL ABSEN 12:26:17	 06 16519010 Girvin Junod  : 06 16519010 Girvin Junod 
+GAGAL ABSEN 12:26:17	 05 16519175 Alif Bhadrika Parikesit  : 05 16519175 Alif Bhadrika Parikesit 
+GAGAL ABSEN 12:26:25	 05 16519200 Bonaventura Bagas Sukarno  : 05 16519200 Bonaventura Bagas Sukarno 
+GAGAL ABSEN 12:26:26	 06 16519273 Muhammad Rifat Abiwardani  : 06 16519273 Muhammad Rifat Abiwardani 
+GAGAL ABSEN 12:26:26	 06 16519208 Ilham Alvindo Riandova  : 06 16519208 Ilham Alvindo Riandova 
+GAGAL ABSEN 12:26:28	 06 16519221 Andrew  : 06 16519221 Andrew 
+GAGAL ABSEN 12:26:45	 05 16519190 Andres Jerriel Sinabutar  : 05 16519190 Andres Jerriel Sinabutar 
+GAGAL ABSEN 12:26:57	 06 16519216 Habibina Arif Muzayyan  : 06 16519216 Habibina Arif Muzayyan 
+GAGAL ABSEN 12:26:59	 05 16519159 Muhammad Bintang Pananjung  : 05 16519159 Muhammad Bintang Pananjung 
+GAGAL ABSEN 12:26:59	 06 16519178 Fadel Ananda Dotty  : 06 16519178 Fadel Ananda Dotty 
+GAGAL ABSEN 12:26:59	 06 16519256 Nathaniel Angelius Tjahyadi  : 06 16519256 Nathaniel Angelius Tjahyadi 
+GAGAL ABSEN 12:27:00	 05 16519269 Harith Fakhiri  : 05 16519269 Harith Fakhiri Setiawan 
+GAGAL ABSEN 12:27:01	 06 16519283 Helkia Yeremia  : 06 16519283 Helkia Yeremia 
+GAGAL ABSEN 12:27:03	 05 16519231 Faris Aziz  : 05 16519231 Faris Aziz 
+GAGAL ABSEN 12:27:06	 05 16519183 Azka Redhia  : 05 16519183 Azka Redhia 
+GAGAL ABSEN 12:27:08	 05 16519169 Tarbiyatun Nafiah  : 05 16519169 Tarbiyatun Nafiah 
+GAGAL ABSEN 12:27:09	 05 16519174 Shaffira Alya Mevia  : 05 16519174 Shaffira Alya Mevia 
+GAGAL ABSEN 12:27:16	 05 16519194 Patricia Aurelia Tekad Tuerah  : 05 16519194 Patricia Aurelia Tekad Tuerah 
+SALAH FORMAT 12:27:17	 06 16519268 Michael Owen  : 06 16519267 Michael owen 
+GAGAL ABSEN 12:27:20	 05 16519199 Renaldi Arlin  : 05 16519199 Renaldi Arlin 
+GAGAL ABSEN 12:27:44	 05 16519181 Ruhiyah Faradishi Widiaputri  : 05 16519181 Ruhiyah Faradishi Widiaputri 
+GAGAL ABSEN 12:29:00	 06 16519104 Aisyah Farras Aqila  : 06 16519104 Aisyah Farras Aqila 

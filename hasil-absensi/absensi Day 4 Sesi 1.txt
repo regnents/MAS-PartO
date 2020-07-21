@@ -1,0 +1,54 @@
+SUKSES       09:48:07	 06 16519268 Michael Owen  : 06 16519268 Michael Owen 
+SUKSES       09:48:30	 05 16519243 Aurelius Marcel Candra  : 05 16519243 Aurelius Marcel Candra 
+SUKSES       09:48:34	 06 16519263 Ahmad Saladin  : 06 16519263 Ahmad Saladin 
+SUKSES       09:48:43	 06 16519203 Warren Gabriel Mulyawan  : 06 16519203 Warren Gabriel Mulyawan 
+SUKSES       09:49:06	 06 16519251 Isabella Handayani Sumantri  : Pagi Kak, 06 16519251 Isabela Handayani Sumantri 
+SUKSES       09:49:31	 06 16519289 Wildan Daffa Hafizh  : 06 16519289 Wildan Daffa Hafizh 
+SUKSES       09:49:47	 05 16519171 Mgs. Tabrani  : 05 16519171 Mgs. Tabrani 
+SUKSES       09:50:04	 06 16519178 Fadel Ananda Dotty  : 06 16519178 Fadel Ananda Dotty 
+SUKSES       09:50:09	 06 16519232 Handy Zulkarnain  : 06 16519232 Handy Zulkarnain 
+SUKSES       09:50:20	 05 16519195 Alexander Ludwig  : 05 16519195 Alexander Ludwig Agu 
+SUKSES       09:50:33	 06 16519204 Fakhri Nail Wibowo  : 06 16519204 Fakhri Nail Wibowo 
+SUKSES       09:50:41	 05 16519190 Andres Jerriel Sinabutar  : 05 16519190 Andres Jerriel Sinabutar 
+SUKSES       09:50:50	 05 16519192 Justin Dermawan Ikhsan  : 05 16519192 Justin Dermawan Ikhsan 
+SUKSES       09:50:59	 06 16519213 Muhammad Dehan Al Kautsar  : 06 16519213 Muhammad Dehan Al Kautsar 
+SUKSES       09:51:03	 06 16519283 Helkia Yeremia  : 06 16519283 Helkia Yeremia 
+SUKSES       09:51:15	 06 16519214 Ronggur  : 06 16519214 Ronggur Mahendra Widya Putra 
+SUKSES       09:51:35	 05 16519183 Azka Redhia  : 05 16519183 Azka Redhia 
+SUKSES       09:51:40	 05 16519159 Muhammad Bintang Pananjung  : 05 16519159 Muhammad Bintang Pananjung 
+SUKSES       09:51:42	 05 16519040 Anastasia Beatrice Caroline  : 05 16519040 Anastasia Beatrice Caroline 
+SUKSES       09:51:53	 06 16519215 Chintya Wijaya  : 06 16519215 Chintya Wijaya 
+SUKSES       09:51:59	 06 16519220 Fathiyya Maghfirah Teddy  : 06 16519220 Fathiyya Maghfirah Teddy 
+SUKSES       09:52:06	 06 16519208 Ilham Alvindo Riandova  : 06 16519208 Ilham Alvindo Riandova 
+SUKSES       09:52:14	 05 16519247 Naufal Alexander Suryasumirat  : 05 16519247 Naufal Alexander Suryasumirat 
+SUKSES       09:52:20	 05 16519163 Arjuna Marcelino  : 05 16519163 Arjuna Marcelino 
+SUKSES       09:52:24	 06 16519288 Muhammad Farhan  : 06 16519288 Muhammad Farhan 
+SUKSES       09:52:31	 05 16519234 Muchammad Fathurrahman Azhar  : 05 16519234 Muchammad Fathurrahman Azhar 
+SUKSES       09:52:33	 05 16519194 Patricia Aurelia Tekad Tuerah  : 05 16519194 Patricia Aurelia Tekad Tuerah 
+SUKSES       09:53:03	 06 16519271 Parnaek  : 06 16519271 Parnaek 
+SUKSES       09:53:03	 06 16519216 Habibina Arif Muzayyan  : 06 16519216 Habibina Arif Muzayyan 
+SUKSES       09:53:12	 06 16519287 Moses Ananta  : 06 16519287 Moses Ananta 
+SUKSES       09:53:35	 06 16519010 Girvin Junod  : 06 16519010 Girvin Junod 
+SUKSES       09:53:39	 05 16519174 Shaffira Alya Mevia  : 05 16519174 Shaffira Alya Mevia 
+SUKSES       09:53:42	 05 16519182 Muhammad Rizal Muhaimin  : 05 16519182 Muhammad Rizal Muhaimin 
+SUKSES       09:53:44	 05 16519181 Ruhiyah Faradishi Widiaputri  : 05 16519181 Ruhiyah Faradishi Widiaputri 
+SUKSES       09:53:44	 06 16519256 Nathaniel Angelius Tjahyadi  : 06 16519256 Nathaniel Angelius Tjahyadi 
+SUKSES       09:53:46	 05 16519199 Renaldi Arlin  : 05 16519199 Renaldi Arlin 
+SUKSES       09:53:48	 05 16519201 Fabian Savero Diaz Prano: 05 16519201 Fabian Savero Diaz Pranoto 
+SUKSES       09:53:49	 06 16519371 Hafid Abi Daniswara  : 06 16519371 Hafid Abi Daniswara 
+SUKSES       09:54:17	 06 16519225 Raihan Astrada Fathurrahman  : 06 16519225 Raihan Astrada Fathurrahman 
+SUKSES       09:54:42	 05 16519217 Mohammad Sheva Almeyda Sofjan  : 05 16519217 Mohammad Sheva Almeyda Sofjan 
+SUKSES       09:54:45	 05 16519241 Leonardus James Wang  : 05 16519241 Leonardus James Wang 
+SUKSES       09:54:58	 05 16519188 Nabil Nabighah  : 05 16519188 Nabil Nabighah 
+SUKSES       09:55:17	 06 16519221 Andrew  : 06 16519221 Andrew 
+SUKSES       09:55:21	 06 16519273 Muhammad Rifat Abiwardani  : 06 16519273 Muhammad Rifat Abiwardani 
+SUKSES       09:56:21	 05 16519507 Hanif Arroisi Mukhlis  : 05 16519507 Hanif Arroisi Mukhlis 
+SUKSES       09:57:10	 05 16519231 Faris Aziz  : 05 16519231 Faris Aziz 
+SALAH FORMAT 09:58:51	 05 Muhammad Rabbani Brata 16519224  : 05 16519224 Muhammad Rabbani Brata 
+SUKSES       09:59:01	 05 16519200 Bonaventura Bagas Sukarno  : 05 16519200 Bonaventura Bagas Sukarno 
+SUKSES       10:00:13	 06 16519034 Indira Damayanti  : 06 16519034 Indira Damayanti 
+SUKSES       10:00:53	 05 16519269 Harith Fakhiri  : 05 16519269 Harith Fakhiri Setiawan 
+SUKSES       10:02:54	 06 16519152 Aulia Adila  : 06 16519152 Aulia Adila 
+SUKSES       10:03:01	 06 16519214 Ronggur  : 06 16519214 Ronggur Mahendra Widya Putra  
+SUKSES       10:03:57	 05 16519247 Naufal Alexander Suryasumirat  : 05 16519247 Naufal Alexander Suryasumirat 
+SUKSES       10:07:21	 06 16519296 Kresna Faza Rizkyawan  : 06 16519296 Kresna Faza R 
