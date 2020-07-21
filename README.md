@@ -10,9 +10,7 @@ Selain itu, digunakan beberapa <i>library</i> eksternal pada Python. <i>Library-
 pip install -r requirements.txt
 ```
 
-Daftar <i>library</i> yang digunakan:
-- gspread
-- oauth2client
+Daftar <i>library</i> internal Python yang tidak terdapat di requirements:
 - re
 - time
 
