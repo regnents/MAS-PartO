@@ -26,7 +26,7 @@ Daftar <i>library</i> yang digunakan:
 ```
 py absensi.py
 ```
-6. Masukkan data-data yang dibutuhkan, seperti nama file, day dan sesi ke berapa, serta waktu awal dan waktu akhir presensi
+6. Masukkan data-data yang dibutuhkan, seperti nama file chat, day dan sesi ke berapa, serta waktu awal dan waktu akhir presensi
 7. Tunggu hingga program selesai
 7. Bila muncul error code 429 dan program terhenti, silahkan tunggu sekitar 1-2 menit lalu coba jalankan program kembali
 
