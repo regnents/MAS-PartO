@@ -28,7 +28,7 @@ SUKSES       12:44:21	 05 16519507 Hanif Arroisi Mukhlis  : 05 16519507 Hanif Ar
 SUKSES       12:44:25	 05 16519241 Leonardus James Wang  : 05 16519241 Leonardus James Wang 
 SUKSES       12:44:38	 05 16519231 Faris Aziz  : 05 16519231 Faris Aziz 
 SUKSES       12:44:40	 05 16519181 Ruhiyah Faradishi Widiaputri  : 05 16519181 Ruhiyah Faradishi Widiaputri 
-SALAH FORMAT 12:44:40	 05 Muhammad Rabbani Brata 16519224  : 05 16519224 Muhammad Rabbani Brata 
+SUKSES       12:44:40	 05 Muhammad Rabbani Brata 16519224  : 05 16519224 Muhammad Rabbani Brata 
 SUKSES       12:44:42	 05 16519234 Muchammad Fathurrahman Azhar  : 05 16519234 Muchammad Fathurrahman Azhar 
 SUKSES       12:44:51	 05 16519269 Harith Fakhiri  : 05 16519269 Harith Fakhiri S 
 SUKSES       12:44:53	 06 16519104 Aisyah Farras Aqila  : 06 16519104 Aisyah Farras Aqila 
