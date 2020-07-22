@@ -14,7 +14,7 @@ def second_counter(waktu):
     detik = (((int(h) * 60) + int(m)) * 60) + int(s)
     return detik
 
-def sheet_editor():
+def sheet_editor(day, sesi):
     global daftar_hasil
     global checker
     scope = [
@@ -120,7 +120,7 @@ while i < len(daftar_hasil):
     if not re.search("\(Privately\)",temp):
         daftar_hasil.remove(temp)
     else:
-        if not re.search("From( )*\d\d ",temp):
+        if not re.search("to.MSDM",temp):
             daftar_hasil.remove(temp)
         else:
             i += 1
@@ -140,16 +140,16 @@ for i in range (len(daftar_hasil)):
         checker.append(0)
     elif (temp_kel[0] != temp_kel[1]) and (temp_nim[0] != temp_nim[1]):
         checker.append(0)
-        print("Presensi dan username berbeda untuk username " + temp_kel[0] + " " + temp_nim[0])
+        print("Presensi dan username berbeda untuk username dengan NIM " + temp_nim[0]  + " dari kelompok " + temp_kel[0])
     else:
         checker.append(1)
 
 # Open and edit the spreadsheet
-done = 0
+done = False
 while not done:
     try:
-        sheet_editor()
-        done = 1
+        sheet_editor(day, sesi)
+        done = True
     except Exception as err:
         print(format(err))
         time.sleep(5)
