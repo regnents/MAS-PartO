@@ -134,27 +134,20 @@ for i in range (len(daftar_hasil)):
 
 # Check if chat is about presence or not
 for teks in daftar_hasil:
-    posisi_mulai = re.search(" : ",teks).start() + 1
+    posisi_mulai = re.search(":",teks[8:]).start() + 1
     temp_pres = re.search("\d\d 16519\d\d\d \s+",teks[posisi_mulai:])
     temp_kel = re.findall(" \d\d ",teks)
     temp_nim = re.findall("16519\d\d\d",teks)
-    if not temp_pres:
+    if len(temp_kel) != 2 or len(temp_nim) != 2:
         checker.append(0)
-    elif (temp_kel[0] != temp_kel[1]) and (temp_nim[0] != temp_nim[1]):
+    elif (temp_kel[0] != temp_kel[1]) or (temp_nim[0] != temp_nim[1]):
         checker.append(0)
         print("Presensi dan username berbeda untuk username dengan NIM " + temp_nim[0]  + " dari kelompok " + temp_kel[0])
     else:
         checker.append(1)
 
 # Open and edit the spreadsheet
-done = False
-while not done:
-    try:
-        sheet_editor(day, sesi)
-        done = True
-    except Exception as err:
-        print(format(err))
-        time.sleep(5)
+sheet_editor(day,sesi)
         
 # Writing the result in a txt file
 nama_file = "hasil-absensi/absensi " + day + " " + sesi +".txt"
