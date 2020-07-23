@@ -120,7 +120,7 @@ while i < len(daftar_hasil):
     if not re.search("\(Privately\)",temp):
         daftar_hasil.remove(temp)
     else:
-        if not re.search("to.MSDM",temp):
+        if not re.search("to.*MSDM",temp):
             daftar_hasil.remove(temp)
         else:
             i += 1
@@ -133,10 +133,12 @@ for i in range (len(daftar_hasil)):
     daftar_hasil[i] = re.sub("\n"," ",temp)
 
 # Check if chat is about presence or not
-for i in range (len(daftar_hasil)):
-    temp_kel = re.findall(" \d\d ",daftar_hasil[i])
-    temp_nim = re.findall("16519\d\d\d",daftar_hasil[i])
-    if (len(temp_kel) != 2) and (len(temp_nim) != 2):
+for teks in daftar_hasil:
+    posisi_mulai = re.search(" : ",teks).start() + 1
+    temp_pres = re.search("\d\d 16519\d\d\d \s+",teks[posisi_mulai:])
+    temp_kel = re.findall(" \d\d ",teks)
+    temp_nim = re.findall("16519\d\d\d",teks)
+    if not temp_pres:
         checker.append(0)
     elif (temp_kel[0] != temp_kel[1]) and (temp_nim[0] != temp_nim[1]):
         checker.append(0)
