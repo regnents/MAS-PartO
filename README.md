@@ -1,3 +1,5 @@
+<h1> THIS README WILL BE CHANGED IN THE FUTURE BECAUSE OF THE CHANGE IN THE CODE. READ AT YOUR OWN RISK </h1>
+
 # MAS-PartO
 
 Mesin Absensi SPARTA Otomatis (MAS-PartO) digunakan untuk mengedit worksheet "Presensi" pada google sheet presensi SPARTA secara otomatis berdasarkan file chat ZOOM yang digunakan.
