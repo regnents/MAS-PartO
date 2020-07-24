@@ -9,14 +9,7 @@ import time
 daftar_hasil =[]
 checker = []
 
-def second_counter(waktu):
-    h, m, s = waktu.split(":")
-    detik = (((int(h) * 60) + int(m)) * 60) + int(s)
-    return detik
-
-def sheet_editor(day, sesi):
-    global daftar_hasil
-    global checker
+def worksheet_creator():
     scope = [
     'https://www.googleapis.com/auth/drive',
     'https://www.googleapis.com/auth/drive.file'
@@ -27,7 +20,21 @@ def sheet_editor(day, sesi):
     client = gspread.authorize(creds)
 
     sheet_presensi = client.open("Presensi Peserta SPARTA 2019 v2")
-    chosen_work = sheet_presensi.worksheet("Presensi")
+    return sheet_presensi.worksheet("Presensi")
+
+def second_counter(waktu,rentang):
+    h, m, s = waktu.split(":")
+    if (rentang == 0) or (rentang == 1 and h == "12"):
+        detik = (((int(h) * 60) + int(m)) * 60) + int(s)
+    else:
+        detik = ((((int(h) + 12) * 60) + int(m)) * 60) + int(s)
+    return detik
+    
+def sheet_editor(day, sesi):
+    global daftar_hasil
+    global checker
+    
+    chosen_work = worksheet_creator()
 
     # Finding the column that need to be edited
     temp_cell_number = chosen_work.find(day)
@@ -46,7 +53,7 @@ def sheet_editor(day, sesi):
         else:
             temp_nim = re.search("16519\d\d\d",daftar_hasil[i]).group(0)
             nim = temp_nim[-3:]
-            kel = re.search("\d\d ",daftar_hasil[i]).group(0)
+            kel = re.search(" \d\d ",daftar_hasil[i]).group(0)
             kel = re.sub(" ","",kel)
             nim_cell = chosen_work.findall(nim)
             while (len(nim_cell) > 1):
@@ -72,93 +79,188 @@ def sheet_editor(day, sesi):
             start_time = time.time()
 
 
+def zoom_absensi():
+    # Open the zoom chat file
+    file_chat = input("Masukkan nama file chat ZOOM (Pastikan file berada di folder file-chat dan jangan lupa extensi .txt nya): ")
+    file_chat = "file-chat/" + file_chat
+    daftar_teks = open(file_chat,"r",encoding='utf-8')
 
+    # Getting all the data (day, sesi, waktu absensi)
+    day = "Day " + str(int(input("Day ke berapa? ")))
+    sesi = "Sesi " + str(int(input("Sesi ke berapa? ")))
+    print("\nMasukkan waktu awal dan akhir absensi (format JJ:MM:DD):")
+    waktu_awal = input("Waktu awal: ")
+    waktu_akhir = input("Waktu akhir: ")
+    detik_awal = second_counter(waktu_awal,0)
+    detik_akhir = second_counter(waktu_akhir,0)
 
-# MAIN PROGRAM
-# Open the zoom chat file
-file_chat = input("Masukkan nama file chat ZOOM (Pastikan file berada di folder file-chat dan jangan lupa extensi .txt nya): ")
-file_chat = "file-chat/" + file_chat
-daftar_teks = open(file_chat,"r",encoding='utf-8')
+    # Moving the file into array of string
+    i = 0        
+    for line in daftar_teks:
+        if (re.search("From .* \:",line)):
+            daftar_hasil.append(line)
+            i += 1
+        else:
+            daftar_hasil[i-1] = daftar_hasil[i-1] + line
 
-# Getting all the data (day, sesi, waktu absensi)
-day = "Day " + str(int(input("Day ke berapa? ")))
-sesi = "Sesi " + str(int(input("Sesi ke berapa? ")))
-print("\nMasukkan waktu awal dan akhir absensi (format JJ:MM:DD):")
-waktu_awal = input("Waktu awal: ")
-waktu_akhir = input("Waktu akhir: ")
+    daftar_teks.close()
 
-
-detik_awal = second_counter(waktu_awal)
-detik_akhir = second_counter(waktu_akhir)
-
-# Moving the file into array of string
-i = 0        
-for line in daftar_teks:
-    if (re.search("From .* \:",line)):
-        daftar_hasil.append(line)
-        i += 1
-    else:
-        daftar_hasil[i-1] = daftar_hasil[i-1] + line
-
-daftar_teks.close()
-
-# Filtering the chat 1: Removing chat outside the time range
-i = 0
-while i < len(daftar_hasil):
-    temp = daftar_hasil[i]
-    waktu_teks = temp[:8]
-    detik_teks = second_counter(waktu_teks)
-    if (detik_awal > detik_teks) or (detik_akhir < detik_teks):
-        daftar_hasil.remove(temp)
-    else:
-        i += 1
-
-# Filtering the chat 2: Removing not Private Chat and Private Chat not received by user
-i = 0
-while i < len(daftar_hasil):
-    temp = daftar_hasil[i]
-    if not re.search("\(Privately\)",temp):
-        daftar_hasil.remove(temp)
-    else:
-        if not re.search("to.*MSDM",temp):
+    # Filtering the chat 1: Removing chat outside the time range
+    i = 0
+    while i < len(daftar_hasil):
+        temp = daftar_hasil[i]
+        waktu_teks = temp[:8]
+        detik_teks = second_counter(waktu_teks)
+        if (detik_awal > detik_teks) or (detik_akhir < detik_teks):
             daftar_hasil.remove(temp)
         else:
             i += 1
 
-# Cleaning the chat
-for i in range (len(daftar_hasil)):
-    temp = daftar_hasil[i]
-    temp = re.sub("From( )*","",temp)
-    temp = re.sub("to.*\(Privately\) ","",temp)
-    daftar_hasil[i] = re.sub("\n"," ",temp)
+    # Filtering the chat 2: Removing not Private Chat and Private Chat not received by user
+    i = 0
+    while i < len(daftar_hasil):
+        temp = daftar_hasil[i]
+        if not re.search("\(Privately\)",temp):
+            daftar_hasil.remove(temp)
+        else:
+            if not re.search("to.*MSDM",temp):
+                daftar_hasil.remove(temp)
+            else:
+                i += 1
 
-# Check if chat is about presence or not
-for teks in daftar_hasil:
-    posisi_mulai = re.search(":",teks[8:]).start() + 1
-    temp_pres = re.search("\d\d 16519\d\d\d \s+",teks[posisi_mulai:])
-    temp_kel = re.findall(" \d\d ",teks)
-    temp_nim = re.findall("16519\d\d\d",teks)
-    if len(temp_kel) != 2 or len(temp_nim) != 2:
-        checker.append(0)
-    elif (temp_kel[0] != temp_kel[1]) or (temp_nim[0] != temp_nim[1]):
-        checker.append(0)
-        print("Presensi dan username berbeda untuk username dengan NIM " + temp_nim[0]  + " dari kelompok " + temp_kel[0])
-    else:
-        checker.append(1)
-
-# Open and edit the spreadsheet
-sheet_editor(day,sesi)
-        
-# Writing the result in a txt file
-nama_file = "hasil-absensi/absensi " + day + " " + sesi +".txt"
-with open(nama_file,"w",encoding="utf-8") as f:
+    # Cleaning the chat
     for i in range (len(daftar_hasil)):
-        if checker[i] == 1:
-            f.write("SUKSES       ")
-        elif checker[i] == 0:
-            f.write("SALAH FORMAT ")
-        elif checker[i] == -1:
-            f.write("GAGAL ABSEN  ")
-        f.write(daftar_hasil[i])
-        f.write("\n")
+        temp = daftar_hasil[i]
+        temp = re.sub("From( )*","",temp)
+        temp = re.sub("to.*\(Privately\) ","",temp)
+        daftar_hasil[i] = re.sub("\n"," ",temp)
 
+    # Check if chat is about presence or not
+    for teks in daftar_hasil:
+        posisi_mulai = re.search(":",teks[8:]).start() + 1
+        temp_pres = re.search("\d\d 16519\d\d\d \s+",teks[posisi_mulai:])
+        temp_kel = re.findall("[ |,|\.]\d\d ",teks)
+        for i in range (len(temp_kel)):
+            temp_kel[i] = re.sub("[ |,|\.]","",temp_kel[i])
+        temp_nim = re.findall("16519\d\d\d",teks)
+        if len(temp_kel) != 2 or len(temp_nim) != 2:
+            checker.append(0)
+        elif (temp_kel[0] != temp_kel[1]) or (temp_nim[0] != temp_nim[1]):
+            checker.append(0)
+            print("Presensi dan username berbeda untuk username dengan NIM " + temp_nim[0]  + " dari kelompok " + temp_kel[0])
+        else:
+            checker.append(1)
+
+    # Open and edit the spreadsheet
+    sheet_editor(day,sesi)
+        
+    # Writing the result in a txt file
+    nama_file = "hasil-absensi/absensi " + day + " " + sesi +".txt"
+    with open(nama_file,"w",encoding="utf-8") as f:
+        for i in range (len(daftar_hasil)):
+            if checker[i] == 1:
+                f.write("SUKSES       ")
+            elif checker[i] == 0:
+                f.write("SALAH FORMAT ")
+            elif checker[i] == -1:
+                f.write("GAGAL ABSEN  ")
+            f.write(daftar_hasil[i])
+            f.write("\n")
+
+def gmeet_absensi():
+    # Open the Google Meet chat file
+    file_chat = input("Masukkan nama file chat Google Meet (Pastikan file berada di folder file-chat dan jangan lupa extensi .txt nya): ")
+    file_chat = "file-chat/" + file_chat
+    daftar_teks = open(file_chat,"r",encoding='utf-8')
+
+    # Getting all the data (day, sesi, waktu absensi)
+    day = "Day " + str(int(input("Day ke berapa? ")))
+    sesi = "Sesi " + str(int(input("Sesi ke berapa? ")))
+    print("\nMasukkan waktu awal dan akhir absensi (format JJ:MM:DD):")
+    waktu_awal = input("Waktu awal: ")
+    waktu_akhir = input("Waktu akhir: ")
+    detik_awal = second_counter(waktu_awal,0)
+    detik_akhir = second_counter(waktu_akhir,0)
+
+    # Moving the file into array of string
+    i = 0
+    for line in daftar_teks:
+        if re.search("\d?\d:\d\d (AM|PM)",line):
+            daftar_hasil.append(line)
+            i += 1
+        else:
+            daftar_hasil[i-1] = daftar_hasil[i-1] + line
+    
+    daftar_teks.close()
+
+    # Filter chat: Time
+    i = 0
+    while i < len(daftar_hasil):
+        temp = daftar_hasil[i]
+        waktu = re.search("\d\d:\d\d (AM|PM)",temp).group(0)
+        range_hari = re.search("(AM|PM)",waktu).group(0)
+        waktu = re.sub(" (AM|PM)",":00",waktu)
+        if range_hari == "AM":
+            detik_teks = second_counter(waktu, 0)
+        elif range_hari == "PM":
+            detik_teks = second_counter(waktu,1)
+        else:
+            assert False, ("Please provide AM or PM at text" + temp)
+        if (detik_awal > detik_teks) or (detik_akhir < detik_teks):
+            daftar_hasil.remove(temp)
+        else:
+            daftar_hasil[i] = waktu + " " + re.sub("\d\d:\d\d (AM|PM)"," : ",temp)
+            i += 1
+    
+    # Filter chat: From own-self
+    i = 0
+    while i < len(daftar_hasil):
+        temp = daftar_hasil[i]
+        if re.search("\d\d:\d\d:\d\d You :",temp):
+            daftar_hasil.remove(temp)
+        else:
+            daftar_hasil[i] = re.sub("\n"," ", temp)
+            i += 1
+    
+    # Cleaning the teks
+    for i in range (len(daftar_hasil)):
+        temp = daftar_hasil[i]
+        lokasi_awal = re.search(" : ",temp).start()
+        if re.search("\d\d 16519\d\d\d \s*",temp[lokasi_awal:]):
+            checker.append(1)
+        else:
+            checker.append(0)
+    
+    # Open and edit the spreadsheet
+    sheet_editor(day,sesi)
+    
+    nama_file = "hasil-absensi/absensi " + day + " " + sesi +".txt"
+    with open(nama_file,"w",encoding="utf-8") as f:
+        for i in range (len(daftar_hasil)):
+            if checker[i] == 1:
+                f.write("SUKSES       ")
+            elif checker[i] == 0:
+                f.write("SALAH FORMAT ")
+            elif checker[i] == -1:
+                f.write("GAGAL ABSEN  ")
+            f.write(daftar_hasil[i])
+            f.write("\n")
+
+
+# MAIN PROGRAM
+if __name__ == "__main__":
+    ulang = True
+    while ulang:
+        print("Platform yang digunakan untuk presensi: ")
+        print("1. ZOOM")
+        print("2. Google Meet")
+        pilihan = input("Masukkan kode dari platform yang digunakan: ")
+        if pilihan == "1":
+            print("Memulai proses menggunakan chat ZOOM")
+            ulang = False
+        elif pilihan == "2":
+            ulang = False
+            print("Memulai proses menggunakan chat Google Meet")
+            gmeet_absensi()
+        else:
+            print("Pilihan yang anda masukkan salah, silahkan coba lagi\n")
