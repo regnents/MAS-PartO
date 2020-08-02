@@ -19,7 +19,7 @@ def worksheet_creator():
     creds = ServiceAccountCredentials.from_json_keyfile_name(file_name,scope)
     client = gspread.authorize(creds)
 
-    sheet_presensi = client.open("Presensi Peserta SPARTA 2019 v2")
+    sheet_presensi = client.open_by_url("https://docs.google.com/spreadsheets/d/16qTh2QtHCp-MLYLzSAoPelqPcRWuwDgG1zwqUlq_Jfw/edit#gid=0")
     return sheet_presensi.worksheet("Presensi")
 
 def second_counter(waktu,rentang):
@@ -110,7 +110,7 @@ def zoom_absensi():
     while i < len(daftar_hasil):
         temp = daftar_hasil[i]
         waktu_teks = temp[:8]
-        detik_teks = second_counter(waktu_teks)
+        detik_teks = second_counter(waktu_teks,0)
         if (detik_awal > detik_teks) or (detik_akhir < detik_teks):
             daftar_hasil.remove(temp)
         else:
@@ -258,6 +258,7 @@ if __name__ == "__main__":
         if pilihan == "1":
             print("Memulai proses menggunakan chat ZOOM")
             ulang = False
+            zoom_absensi()
         elif pilihan == "2":
             ulang = False
             print("Memulai proses menggunakan chat Google Meet")
